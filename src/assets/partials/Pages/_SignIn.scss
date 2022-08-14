@@ -1,0 +1,115 @@
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    height: 100vh;
+    flex-direction: column;
+
+    &_box {
+        width: 35%;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.747); 
+        border: none;
+        outline: none;
+    }
+
+    &_heading {
+        padding: 20px 80px;
+        display: flex;
+        flex-direction: column;
+
+      h5 {
+        color: white;
+        font-size: 33px;
+        font-weight: 700;
+        margin-top: 35px;
+      }
+    }
+
+    &_inputFields {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px 80px;
+
+        input {
+            margin-top: 15px;
+            background-color: #333333;
+            padding: 15px 18px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            color: white;
+        }
+
+        button {
+            margin-top: 40px;
+            background-color: #E50914;
+            padding: 15px;
+            font-weight: 700;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+
+
+    &_forgot {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &_rememberMe {
+      display: flex;
+      align-items: center;
+      margin: 0px 20px;
+      height: 40px;
+
+      input[type=checkbox] {
+       padding: 0px;
+       margin-left: 8px;
+      }
+
+      p {
+        margin-top: 15px;
+        color: #B3B3B3;
+        margin-left: 5px;
+        font-size: 13px;
+      }
+    }
+
+    &_needHelp {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    height: 40px;
+  
+      p {
+      margin-top: 15px;
+      color: #B3B3B3;
+      margin-left: 5px;
+      font-size: 14px; 
+      cursor: pointer;
+    }  
+
+  }
+    
+     &_newToNetflix {
+      display: flex;
+      padding: 20px 80px;
+     }
+
+     &_Now {
+      display: flex;
+
+      p {
+        color: #737361;
+        margin-right: 10px;
+      }
+
+      h6 {
+        color: white;
+      }
+     }
+}

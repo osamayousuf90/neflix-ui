@@ -1,0 +1,32 @@
+    .navbar {
+        height: 80px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &_logo {
+            img {
+                width: 130px;
+                margin: 10px 35px;
+            }
+        }
+
+        &_links {
+            display: flex;
+            margin: 0px 50px;
+            color: white !important;
+
+            p {
+                margin: 0px 10px;
+                color: white !important;
+                padding: 3px;
+                font-weight: 500;
+            }
+
+            .signupbtn {
+                background-color: #E50914;
+                border-radius: 5px;
+            }
+        }
+    }

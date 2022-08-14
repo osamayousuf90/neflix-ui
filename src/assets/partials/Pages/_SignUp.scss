@@ -1,0 +1,62 @@
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  height: 80vh;
+
+  &_text {
+    padding: 20px;
+    text-align: center;
+
+    h5 {
+      font-size: 50px;
+      color: white;
+      font-weight: 500;
+      padding: 5px;
+    }
+
+    p {
+        color: white;
+        padding: 5px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+  }
+
+    &_getStarted {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin-top: 20px; 
+
+       p {
+        font-size: 20px;
+        font-weight: 500;
+       }
+
+       input {
+        width: 70%;
+        height: 65px;
+        padding: 20px;
+        outline: none;
+        border: none;
+        font-weight: 700;
+        color: grey;
+       }
+    }
+
+    &_subscription {
+     display: flex;
+
+     button {
+      background-color: #E50914;
+      color: white;
+      font-weight: 700;
+      height: 65px;
+      width: 30%;
+      border: none;
+      outline: none;
+      font-size: 20px;
+     }
+    }
+}
