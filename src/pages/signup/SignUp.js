@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from "../../components/Navbar"
+import { useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
+  const navigate = useNavigate();
   return (
      <div>
     <div className="bg">
@@ -14,7 +16,7 @@ const SignUp = () => {
           <p>Ready to watch? Enter your email to create or restart your membership.</p>
           <div className="signup_subscription">
           <input type="text" placeholder='Email Address' />
-          <button>Get Started <i class="fa-solid fa-angle-right"></i></button>
+          <button onClick={() => navigate("/passwordCreator")}>Get Started <i class="fa-solid fa-angle-right"></i></button>
           </div>
         </div>
         </div>
