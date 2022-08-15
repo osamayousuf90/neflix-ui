@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
+import { useNavigate } from 'react-router-dom'
 
 const OnePassCreator = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar pswCreater={"true"}/>
@@ -22,7 +24,7 @@ const OnePassCreator = () => {
          <div className="onePassCreater_input">
           <input type="text" placeholder='Enter Your Password' />
           <p>Forgot Your Paswsword?</p>
-          <button>Next</button>
+          <button onClick={() => navigate("/passwordCreater/choosePlan")}>Next</button>
          </div>
       </div>
       </div>
