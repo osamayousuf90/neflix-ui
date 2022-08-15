@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({pswCreater, signUpPageView}) => {
   return (
+    <div>
      <div className="navbar">
         <div className="navbar_logo">
          <img src={logo} />
@@ -14,6 +15,8 @@ const Navbar = ({pswCreater, signUpPageView}) => {
          {signUpPageView === "true" ? "" :"" }
          {signUpPageView === "true" ? <Link to="/signin"><p className="signinbtn">Sign In</p></Link>  : "" } 
         </div>  
+     </div>
+     <hr />
      </div>
   )
 }

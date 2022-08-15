@@ -3,8 +3,9 @@
 
 
 // Pages
-@import "../src//assets/partials/Pages/SignUp";
-@import "../src/assets/partials/Pages/SignIn";
+@import "../src/assets/partials/Pages/SignUp/SignUp";
+@import "../src/assets/partials/Pages/SignIn/SignIn";
+@import "../src/assets/partials/Pages/AccMaking/OnePassCreater";
 
 .bg {
     height: 100vh;
