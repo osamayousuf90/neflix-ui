@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center !important;
-    height: 100vh;
+    height: 80vh !important;
     flex-direction: column;
 
     &_box {
         width: 35%;
-        height: 90vh;
+        height: 80vh;
         background-color: rgba(0, 0, 0, 0.747); 
         border: none;
         outline: none;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../../components/Navbar"
+import Navbar from "../../components/Navbar/Navbar"
 import { useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
@@ -7,7 +7,7 @@ const SignUp = () => {
   return (
      <div>
     <div className="bg">
-      <Navbar/>
+      <Navbar signUpPageView={"true"}/>
       <div className="signup">
         <div className="signup_text">
           <h5>Unlimited movies, TV <br /> shows, and more.</h5>
