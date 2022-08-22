@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
+import { useNavigate } from 'react-router-dom'
 
 const TwoChoosePlan = () => {
+  const navigate = useNavigate();
   return (
       <div>
         <Navbar pswCreater={"true"}/>
@@ -20,7 +22,7 @@ const TwoChoosePlan = () => {
           <p><i class="fa-solid fa-check"></i>No ads and no extra fees. Ever.</p>
          </div>
          <div className="twoChoosePlan_input">
-          <button>Next</button>
+          <button onClick={() => navigate("/passwordCreater/choosePlan/selectSubscription")}>Next</button>
          </div>
       </div>
       </div>
