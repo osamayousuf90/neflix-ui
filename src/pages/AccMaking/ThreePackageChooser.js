@@ -1,9 +1,11 @@
 import React from 'react'
 import Navbar from "../../components/Navbar/Navbar";
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ThreePackageChooser = () => {
-   const [clicked , setClicked] = useState("Basic");
+   const [clicked, setClicked] = useState("Basic");
+   const navigate = useNavigate();
 
   return (
       <div>
@@ -69,6 +71,18 @@ const ThreePackageChooser = () => {
             <div className="packageChooser_content4"><h6 className={clicked === "Standard" ? "packageChooser_listClicked" : "packageChooser_notListClicked"}><i class="fa-solid fa-mobile-button"></i>Phone</h6>  <h6 className={clicked === "Standard" ? "packageChooser_listClicked" : "packageChooser_notListClicked"}><i class="fa-solid fa-tablet"></i>Tablet</h6> <h6 className={clicked === "Standard" ? "packageChooser_listClicked" : "packageChooser_notListClicked"}><i class="fa-solid fa-desktop"></i>Laptop</h6>  <h6 className={clicked === "Standard" ? "packageChooser_listClicked" : "packageChooser_notListClicked"}><i class="fa-solid fa-display"></i>Tv</h6></div>
             <div className="packageChooser_content5"><h6 className={clicked === "Premium" ? "packageChooser_listClicked" : "packageChooser_notListClicked"}><i class="fa-solid fa-mobile-button"></i>Phone</h6>  <h6 className={clicked === "Premium" ? "packageChooser_listClicked" : "packageChooser_notListClicked"}><i class="fa-solid fa-tablet"></i>Tablet</h6> <h6 className={clicked === "Premium" ? "packageChooser_listClicked" : "packageChooser_notListClicked"}><i class="fa-solid fa-desktop"></i>Laptop</h6>  <h6 className={clicked === "Premium" ? "packageChooser_listClicked" : "packageChooser_notListClicked"}><i class="fa-solid fa-display"></i>Tv</h6></div>
             </div>
+
+           
+           <div className="packageChooser_termsOfUse">
+              <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all <br /> content is available in all resolutions. See our Terms of Use for more details.</p>
+
+              <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, <br /> and 1 with Basic and Mobile.</p>
+           </div>  
+
+           <div className="packageChooser_button">
+              <button onClick={() => navigate("/paymentMaker")}>Next</button>
+            </div>
+            
          </div>
       </div>
   )

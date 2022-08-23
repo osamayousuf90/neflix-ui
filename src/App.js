@@ -5,6 +5,7 @@ import SignIn from './pages/signin/SignIn';
 import OnePassCreator from './pages/AccMaking/OnePassCreator';
 import TwoChoosePlan from "./pages/AccMaking/TwoChoosePlan";
 import ThreePackageChooser from "./pages/AccMaking/ThreePackageChooser";
+import FourPaymentMaker from "./pages/AccMaking/FourPaymentMaker";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/signin" element={<SignIn/>}></Route>
         <Route path='/passwordCreator' element={<OnePassCreator/>}></Route>
         <Route path="/passwordCreater/choosePlan" element={<TwoChoosePlan/>}></Route>
-        <Route path="/passwordCreater/choosePlan/selectSubscription" element={<ThreePackageChooser/>} ></Route>
+        <Route path="/passwordCreater/choosePlan/selectSubscription" element={<ThreePackageChooser />}></Route>
+        <Route path="/paymentMaker" element={<FourPaymentMaker/>}></Route>
       </Routes>
       </BrowserRouter>
    </div>   
