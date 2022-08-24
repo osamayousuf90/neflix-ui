@@ -20,7 +20,6 @@ const FourPaymentMaker = () => {
                 <h6>Choose how to pay</h6>
                 <div className="fourPaymentMaker_paragraph">
                     <p>Your payment is encrypted and you can change how you pay anytime.</p>  
-
                      <h6>Secure for peace of mind. Cancel easily online.</h6>     
                 </div>       
                 </div> 
