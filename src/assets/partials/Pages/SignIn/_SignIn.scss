@@ -4,17 +4,18 @@
     align-items: center !important;
     height: 80vh !important;
     flex-direction: column;
+    overflow: auto;
 
     &_box {
         width: 35%;
-        height: 80vh;
+        height: 800px;
         background-color: rgba(0, 0, 0, 0.747); 
         border: none;
         outline: none;
     }
 
     &_heading {
-        padding: 20px 80px;
+        padding: 20px 70px;
         display: flex;
         flex-direction: column;
 
@@ -30,7 +31,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 5px 80px;
+        padding: 5px 70px;
 
         input {
             margin-top: 15px;
@@ -112,4 +113,185 @@
         color: white;
       }
      }
+
+
+     @media screen and (max-width: 1024px) {
+      &_box {
+        width: 50%;
+        height: 800px;
+        background-color: rgba(0, 0, 0, 0.747); 
+        border: none;
+        outline: none;
+    }
+     }
+
+
+     @media screen and (max-width: 768px) {
+      &_box {
+        width: 60%;
+        height: 800px;
+        background-color: rgba(0, 0, 0, 0.747); 
+        border: none;
+        outline: none;
+    }
+
+
+    &_inputFields {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px 40px;
+
+      input {
+          margin-top: 15px;
+          background-color: #333333;
+          padding: 15px 18px;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          color: white;
+      }
+
+      button {
+          margin-top: 40px;
+          background-color: #E50914;
+          padding: 15px;
+          font-weight: 700;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          color: white;
+      }
+  }
+
+  &_heading {
+    margin-top: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+
+  h5 {
+    color: white;
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 35px;
+  }
+}
+     }
+
+
+     @media screen and (max-width: 488px) {
+      &_box {
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        background-color: black; 
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0px;
+    }
+
+    &_inputFields {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px 40px;
+
+      input {
+          margin-top: 15px;
+          background-color: #333333;
+          padding: 15px 18px;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          color: white;
+      }
+
+      button {
+          margin-top: 40px;
+          background-color: #E50914;
+          padding: 15px;
+          font-weight: 700;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          color: white;
+      }
+  }
+
+  &_heading {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+  h5 {
+    color: white;
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 35px;
+  }
+}
+     }
+
+
+
+     @media screen and (max-width: 320px) {
+      &_box {
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        background-color:black; 
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0px;
+    }
+
+    &_inputFields {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px 20px;
+
+      input {
+          margin-top: 15px;
+          background-color: #333333;
+          padding: 15px 18px;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          color: white;
+      }
+
+      button {
+          margin-top: 40px;
+          background-color: #E50914;
+          padding: 15px;
+          font-weight: 700;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          color: white;
+      }
+  }
+
+  &_heading {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+  h5 {
+    color: white;
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 35px;
+  }
+}
+     }
+
+
+
 }

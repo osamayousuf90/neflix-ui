@@ -7,21 +7,21 @@ const TwoChoosePlan = () => {
   return (
       <div>
         <Navbar pswCreater={"true"}/>
-      <div className="twoChoosePlan">
-      <div className="twoChoosePlan_box">
-        <div className="twoChoosePlan_steps">
+      <div className="step2">
+      <div className="step2_box">
+        <div className="step2_steps">
         <i class="fa-regular fa-circle-check"></i>
         <span>STEP 2 OF 3</span>
         </div>
-         <div className="twoChoosePlan_heading">
+         <div className="step2_heading">
           <h6>Choose Your Plan.</h6>
          </div>
-         <div className="twoChoosePlan_text">
+         <div className="step2_text">
           <p><i class="fa-solid fa-check"></i>No commitments, cancel anytime.</p>
           <p><i class="fa-solid fa-check"></i>Everything on Netflix for one low price.</p>
           <p><i class="fa-solid fa-check"></i>No ads and no extra fees. Ever.</p>
          </div>
-         <div className="twoChoosePlan_input">
+         <div className="step2_input">
           <button onClick={() => navigate("/passwordCreater/choosePlan/selectSubscription")}>Next</button>
          </div>
       </div>

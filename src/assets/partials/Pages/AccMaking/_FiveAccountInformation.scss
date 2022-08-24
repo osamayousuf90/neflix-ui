@@ -1,0 +1,163 @@
+.step5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+
+    &_inner {
+        width: 35%;
+        height: 800px;
+    }
+
+    &_top {
+        padding-top: 20px;
+
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        h6 {
+            font-size: 33px;
+            font-weight: 500;
+        }
+    }
+
+
+    &_visaImgs {
+        display: flex;
+        margin: 20px 0px;
+
+        img {
+            width: 40px;
+            margin: 0px 5px;
+        }
+
+    }
+
+    &_inputForm {
+      display: flex;
+      flex-direction: column;  
+      height: 400px;
+
+      input {
+        padding: 20px;
+        border: 1px solid rgba(95, 94, 94, 0.342);
+        color: black;
+        outline: none;
+        height: 55px;
+        margin: 10px 0px;
+        border-radius: 5px;
+      }
+    }
+
+    &_subscriptionDetail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F4F4F4;
+        height: 70px;
+        width: 100%;
+        border-radius: 5px; 
+    }
+
+    &_details {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 50px 20px;
+    }
+
+    &_detailsBtn {
+       
+         button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #0071EB;
+            padding: 20px;
+            font-weight: bold;
+         }   
+    }
+  
+     &_information {
+        margin-top: 20px;
+
+        p {
+            font-size: 13px;
+            color: grey;
+            font-weight: 600;
+        }
+
+        h6 {
+            font-size: 13px;
+            color: grey;
+            font-weight: 600;
+            margin-top: 40px;
+        }
+     } 
+
+
+     &_checkbox {
+        display: flex;
+        margin-top: 15px;
+
+        .check {
+            height: 25px;
+            width: 25px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+     }
+
+     &_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+
+
+        button {
+            width: 100%;
+            height: 60px;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+     }
+
+
+
+
+     @media  (max-width: 768px) {
+        &_inner {
+            width: 80%;
+            height: 800px;
+        }
+     }
+
+
+     @media  (max-width: 488px) {
+        &_inner {
+            width: 80%;
+            height: 800px;
+        }
+     }
+
+     @media  (max-width: 320px) {
+        &_inner {
+            width: 90%;
+            height: 800px;
+        }
+     }
+
+}

@@ -9,13 +9,14 @@
 @import "../src/assets/partials/Pages/AccMaking/TwoChoosePlan";
 @import "../src/assets/partials/Pages/AccMaking/ThreePackageChoose";
 @import "../src/assets/partials/Pages/AccMaking/FourPaymentMaker";
+@import "../src/assets/partials/Pages/AccMaking/FiveAccountInformation";
 
 .bg {
     height: 100vh;
     width: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.418), rgb(0, 0, 0)), url("./assets//images/bg.jpg") !important;
     background-repeat:no-repeat;
-    background-size: 100% !important;
+    background-size: cover !important;
     background-position: center;
     position: absolute;
     z-index: -10;
@@ -30,6 +31,32 @@
     background-position: center;
     position: absolute;
     z-index: -10;
+}
+
+
+@media screen and (max-width: 768px) {
+    .bg {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.418), rgb(0, 0, 0)), url("./assets//images/bg.jpg") !important;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        position: absolute;
+        z-index: -10;
+    }
+
+    .bg2 {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.616)), url("./assets//images/bg.jpg") !important;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        position: absolute;
+        z-index: -10;
+    }
+
 }
 
 * {

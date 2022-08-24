@@ -1,4 +1,4 @@
-.onePassCreater {
+.step1 {
     height: auto;
     width: 100%;
     display: flex;
@@ -81,5 +81,40 @@
         border-radius: 5px;
         color: white;
        }
+    }
+
+
+    @media screen and (max-width: 1024px) {
+      &_box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 60%;
+        padding: 0px 30px;
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+      &_box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 60%;
+        padding: 0px 30px;
+        }
+    }
+
+    @media screen and (max-width: 488px) {
+      &_box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 100%;
+        padding: 0px 20px;
+        }
     }
 }
