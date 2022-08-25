@@ -32,6 +32,31 @@
         }
 
 
+        &_mainHome {
+            width: 80%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           height: 60px;
+           position: relative;
+
+            p {
+                margin: 0px 20px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+
+        &_pt1 {
+            display: flex;
+        }
+
+        &_pt2 {
+            
+            .fa-magnifying-glass {
+                font-size: 30px;
+            }
+        }
 
         @media screen and (max-width: 488px) {
             &_logo {
@@ -65,5 +90,116 @@
             font-size: 18px;
             margin: 0px -20px;
             font-weight: bold;
+           }
+    }
+
+
+
+
+
+        .navbarBlackBg {
+        height: 100px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 99;
+        background-color: black !important;
+
+        &_logo {
+            img {
+                width: 130px;
+                margin: 10px 35px;
+            }
+        }
+
+        &_links {
+            display: flex;
+            margin: 0px 50px;
+            color: white !important;
+
+            p {
+                margin: 0px 10px;
+                color: white !important;
+                padding: 5px 20px;
+                font-weight: 500;
+                color: white;
+            }
+
+            .signinbtn {
+                background-color: #E50914 !important;
+                border-radius: 5px;
+            }
+        }
+
+        &_mainHome {
+           width: 80%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           height: 60px;
+           position: relative;
+           color: white !important;
+
+            p {
+                margin: 0px 20px;
+                font-weight: 600;
+                cursor: pointer;
+                color: white;
+            }
+        }
+
+        &_pt1 {
+            display: flex;
+            color: white !important;
+
+            p {
+                font-size: white !important;
+            }
+        }
+
+        &_pt2 {
+            
+            .fa-magnifying-glass {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 488px) {
+            &_logo {
+                img {
+                    width: 100px;
+                    margin: 10px 10px;
+                }
+            }
+    
+            &_links {
+                display: flex;
+                margin: 10px 10px;
+                color: white !important;
+    
+                p {
+                    margin: 0px 10px;
+                    color: white !important;
+                    padding: 5px 20px;
+                    font-weight: 500;
+                }
+    
+                .signinbtn {
+                    background-color: #E50914 !important;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .blackSignIn {
+            color: #333333 !important;
+            font-size: 18px;
+            margin: 0px -20px;
+            font-weight: bold;
+           }
+
+           .blackBg {
+            background-color: black !important;
            }
     }
