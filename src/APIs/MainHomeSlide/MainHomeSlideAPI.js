@@ -1,0 +1,11 @@
+const imgSlide = [
+    {name: "Stranger Things", img: "http://static-28.sinclairstoryline.com/resources/media/4ae3132e-48a2-4361-97c9-820c540c0146-19944230_967477510058599_4600358373872679763_o.jpg", logo: "https://logos-world.net/wp-content/uploads/2020/05/Stranger-Things-Logo.png", description : `Stranger Things is an American science fiction drama television series created by the Duffer
+    Brothers , who also serve as showrunners and are executive producers along with Shawn Levy and
+             Dan Cohen . Its first season was released on Netflix on July 15, 2016. In February 2022, the series
+             was renewed for a fifth and final season.` },
+    {name: "Moeny Heist", img: "https://besttoppers.com/wp-content/uploads/2020/09/money-heist-season-5.jpg", logo: "https://occ-0-1722-92.1.nflxso.net/dnm/api/v6/H8D6qtacWfxpwORI6dw3sYdASQc/AAAABTg9ihCdTCoVy2GB28LehJXNfGXw2kzOy-Gw6m021OBpUuPQ8U1o60dA6OLnNcS8kNM6hRrCLE5BjgEa-CrxXaDhxbPi1tM2LYtIJnTmQ5AD0mVtCriwVmtc8P9az7U5uLNeaVna6XHAu1Eittki4JIpdhEXomUW-jA0pezJ5vGtUQ.png?r=5d1", description : `A large part of the show revolves around Will Robinson's connection to an alien robot and an alien engine capable of interstellar travel that a small group of humans had previously and secretly stolen from the robots. An army of other robots, much like Will's robot, try to take the engine back, stranding everyone in deep space. The army is led by a robot dubbed "SAR" (Second Alien Robot). The robots' creators are largely unknown, except for the fact that they are extinct.` },
+    {name : "Knives Out", img : "https://image.tmdb.org/t/p/original/ocqXvTtjvmEGcSa8Yo1Wehkyf6i.jpg", logo : "https://image.tmdb.org/t/p/original/aYKRKkxwkHTP3sGHp8E5tnNHhvy.png", description : `When renowned crime novelist Harlan Thrombey (Christopher Plummer) is found dead at his estate just after his 85th birthday, the inquisitive and debonair Detective Benoit Blanc (Daniel Craig) is mysteriously enlisted to investigate. From Harlan's disfunctional family to his devoted staff, Blanc sifts through a web of red herrings and self-serving lies to uncover the truth behind Harlan's untimely death.` }
+]
+
+
+export default imgSlide;

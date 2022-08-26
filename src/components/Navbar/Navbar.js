@@ -12,6 +12,7 @@ const Navbar = ({ pswCreater, signUpPageView, mainHome }) => {
         </div>
         {mainHome === "true" ? <div className="navbar_mainHome">
           <div className="navbar_pt1">
+          {mainHome === "true" ? <p style={mainHome === "true" ? {color: "white"} : ""}>Home</p> : ""}  
           {mainHome === "true" ? <p style={mainHome === "true" ? {color: "white"} : ""}>Tv Shows</p> : ""}  
           {mainHome === "true" ? <p style={mainHome === "true" ? { color: "white" } : ""}>Movies</p> : ""}  
           {mainHome === "true" ? <p style={mainHome === "true" ? { color: "white" } : ""}>My List</p> : ""}

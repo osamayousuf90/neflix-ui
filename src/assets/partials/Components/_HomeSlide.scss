@@ -1,4 +1,7 @@
 .homeS {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
 
     .mySwiper {
         width: 100%;
@@ -12,11 +15,16 @@
     }
 
    .homeSlide {
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 800px;
     position: relative;
+    width: 100%;
     
     img {
-        height: 600px;
+        height: 800px;
         width: 100%;
         position: fixed;
         z-index: -999;
@@ -26,35 +34,302 @@
         background-image: linear-gradient(to left , rgba(0, 0, 0, 0) , rgb(2, 0, 0));
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
         width: 100%;
-        padding: 20px 150px;
-        height: 600px;
-        position: fixed;
+        height: 800px;
+        position: relative;
 
         img {
             width: 600px;
-            height: 400px;
+            height: 250px;
             z-index: 99;
-            position: fixed;
-            padding: 100px 0px;
+            position: absolute;
+            left: 40px;
+            top: 80px;
+            padding: 0px 0px;
         }
     }
 
     &_text {
-        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 350px;
+        margin: 0px 40px;
         z-index: 99;
+        position: relative;
+        height: 200px;
 
         h5 {
             color: white;
-            position: fixed;
-            top: 345px;
-            right: 450px;
-            margin: 0px 150px;
+            position: relative;
+            margin: 10px 300px;
+            right: 300px;
         }
     }
 
-    
-   }
 
+    &_buttons {
+        display: flex;
+        width: 20%;
+        height: 100px;
+        position: relative;
+
+
+        .play {
+            border-radius: 5px;
+            height: 40px;
+            width: 120px;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            color: black;
+            background: white;
+            font-weight: 600;
+        }
+
+        .fa-play {
+          margin-right: 10px;
+        }
+
+        .fa-plus {
+        margin-right: 10px;
+        }
+
+        .addList {
+            font-weight: 600;
+            margin-left: 10px;
+            border-radius: 5px;
+            height: 40px;
+            width: 120px;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            color: white;
+            background: rgba(128, 128, 128, 0.192); 
+        }
+    }
+
+
+//  res start
+
+@media (max-width: 1024px) {
+    .homeSlide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 600px;
+        position: relative;
+        width: 100%;
+        
+        img {
+            height: 600px;
+            width: 100%;
+            position: fixed;
+            z-index: -999;
+        }
+    
+        &_content {
+            background-image: linear-gradient(to left , rgba(0, 0, 0, 0) , rgb(2, 0, 0));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            height: 800px;
+            position: relative;
+    
+            img {
+                width: 500px;
+                height: 180px;
+                z-index: 99;
+                position: absolute;
+                left: 40px;
+                top: 80px;
+                padding: 0px 0px;
+            }
+        }
+    
+        &_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 280px;
+            margin: 0px 40px;
+            z-index: 99;
+            position: relative;
+            height: 200px;
+    
+            h5 {
+                color: white;
+                position: relative;
+                margin: 10px 200px;
+                right: 200px;
+            }
+        }
+    
+    
+        &_buttons {
+            display: flex;
+            width: 40%;
+            height: 100px;
+            position: relative;
+    
+    
+            .play {
+                border-radius: 5px;
+                height: 40px;
+                width: 120px;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                color: black;
+                background: white;
+                font-weight: 600;
+            }
+    
+            .fa-play {
+              margin-right: 10px;
+            }
+    
+            .fa-plus {
+            margin-right: 10px;
+            }
+    
+            .addList {
+                font-weight: 600;
+                margin-left: 10px;
+                border-radius: 5px;
+                height: 40px;
+                width: 120px;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                color: white;
+                background: rgba(128, 128, 128, 0.192); 
+            }
+        }
+    
+    
+    
+    
+       }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .homeSlide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 600px;
+        position: relative;
+        width: 100%;
+        
+        img {
+            height: 600px;
+            width: 100%;
+            position: fixed;
+            z-index: -999;
+        }
+    
+        &_content {
+            background-image: linear-gradient(to left , rgba(0, 0, 0, 0) , rgb(2, 0, 0));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            height: 800px;
+            position: relative;
+    
+            img {
+                width: 500px;
+                height: 180px;
+                z-index: 99;
+                position: absolute;
+                left: 40px;
+                top: 80px;
+                padding: 0px 0px;
+            }
+        }
+    
+        &_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 280px;
+            margin: 0px 40px;
+            z-index: 99;
+            position: relative;
+            height: 200px;
+    
+            h5 {
+                color: white;
+                position: relative;
+                margin: 10px 200px;
+                right: 200px;
+            }
+        }
+    
+    
+        &_buttons {
+            display: flex;
+            width: 40%;
+            height: 100px;
+            position: relative;
+    
+    
+            .play {
+                border-radius: 5px;
+                height: 40px;
+                width: 120px;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                color: black;
+                background: white;
+                font-weight: 600;
+            }
+    
+            .fa-play {
+              margin-right: 10px;
+            }
+    
+            .fa-plus {
+            margin-right: 10px;
+            }
+    
+            .addList {
+                font-weight: 600;
+                margin-left: 10px;
+                border-radius: 5px;
+                height: 40px;
+                width: 120px;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                color: white;
+                background: rgba(128, 128, 128, 0.192); 
+            }
+        }
+    
+    
+    
+    
+       }
+}
+
+   }
    
 }
+
