@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.png";
 import { Link } from 'react-router-dom';
 import SideBar from '../SideBar/SideBar';
 import { useState } from 'react';
+import profile from "../../assets/images/profile.png"
 
 const Navbar = ({ pswCreater, signUpPageView, mainHome }) => {
   const [close, setClose] = useState(false);
@@ -20,10 +21,11 @@ const Navbar = ({ pswCreater, signUpPageView, mainHome }) => {
           {mainHome === "true" ? <p style={mainHome === "true" ? { color: "white" } : ""}>My List</p> : ""}
           </div>
           {mainHome === "true" ? <div className="navbar_pt2">
-          <p style={mainHome === "true" ? { color: "white"} : ""}><i class="fa-solid fa-magnifying-glass"></i></p>
+            <p style={mainHome === "true" ? { color: "white" } : ""}><i class="fa-solid fa-magnifying-glass"></i></p>
+            {mainHome === "true" && <img src={profile} /> }
           </div> : ""} 
           <div className="navbar_togglerSwitch">
-          {mainHome === "true" ? <i onClick={() => setClose(!close)} class="fa-solid fa-bars"></i> : ""}
+            {mainHome === "true" ? <i onClick={() => setClose(!close)} class="fa-solid fa-bars"></i> : ""}
           </div>
         </div> : ""}
         
