@@ -71,7 +71,7 @@
 
     &_buttons {
         display: flex;
-        width: 20%;
+        width: auto;
         height: 100px;
         position: relative;
 
@@ -112,15 +112,7 @@
 
    }
 
-
-
-
-
-
-
-
-
-   @media (max-width: 1024px) {
+   @media (max-width: 1061px) {
     .homeSlide {
         display: flex;
         flex-direction: column;
@@ -153,7 +145,7 @@
                 z-index: 99;
                 position: absolute;
                 left: 40px;
-                top: 80px;
+                top: 120px;
                 padding: 0px 0px;
             }
         }
@@ -171,15 +163,15 @@
             h5 {
                 color: white;
                 position: relative;
-                margin: 10px 200px;
-                right: 200px;
+                margin: 10px 150px;
+                right: 150px;
             }
         }
     
     
         &_buttons {
             display: flex;
-            width: 40%;
+            width: auto;
             height: 100px;
             position: relative;
     
@@ -221,11 +213,6 @@
        }
 }
 
-
-
-
-
-
 @media (max-width: 780px) {
     .homeSlide {
         display: flex;
@@ -258,8 +245,8 @@
                 height: 90px;
                 z-index: 99;
                 position: absolute;
-                left: 50px;
-                top: 30px;
+                left: 60px;
+                top: 80px;
                 padding: 0px 0px;
             }
         }
@@ -268,7 +255,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            top: 130px;
+            top: 180px;
             margin: 0px 40px;
             z-index: 99;
             position: relative;
@@ -286,7 +273,7 @@
     
         &_buttons {
             display: flex;
-            width: 60%;
+            width: auto;
             height: 100px;
             position: relative;
     
@@ -340,12 +327,12 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 280px;
+        height: 300px;
         position: relative;
         width: 100%;
         
         img {
-            height: 280px;
+            height: 300px;
             width: 100%;
             position: fixed;
             z-index: -999;
@@ -362,12 +349,12 @@
             position: relative;
     
             img {
-                width: 250px;
-                height: 80px;
+                width: 200px;
+                height: 70px;
                 z-index: 99;
                 position: absolute;
                 left: 30px;
-                top: 30px;
+                top: 70px;
                 padding: 0px 0px;
             }
         }
@@ -376,7 +363,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            top: 110px;
+            top: 140px;
             z-index: 99;
             position: relative;
             height: 50px;
@@ -393,7 +380,7 @@
     
         &_buttons {
             display: flex;
-            width: 60%;
+            width: auto;
             height: 100px;
             position: relative;
             right: 20px;
@@ -468,12 +455,12 @@
             position: relative;
     
             img {
-                width: 200px;
-                height: 70px;
+                width: 140px;
+                height: 50px;
                 z-index: 99;
                 position: absolute;
                 left: 30px;
-                top: 30px;
+                top: 70px;
                 padding: 0px 0px;
             }
         }
@@ -482,7 +469,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            top: 110px;
+            top: 120px;
             z-index: 99;
             position: relative;
             height: 50px;
@@ -492,14 +479,14 @@
                 position: relative;
                 margin: 10px 30px;
                 right: 50px;
-                font-size: 12px !important;
+                font-size: 11px !important;
             }
         }
     
     
         &_buttons {
             display: flex;
-            width: 80%;
+            width: auto;
             height: 100px;
             position: relative;
             right: 20px;
@@ -573,12 +560,12 @@
             position: relative;
     
             img {
-                width: 180px;
-                height: 60px;
+                width: 140px;
+                height: 40px;
                 z-index: 99;
                 position: absolute;
                 left: 30px;
-                top: 30px;
+                top: 80px;
                 padding: 0px 0px;
             }
         }
@@ -587,7 +574,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            top: 80px;
+            top: 120px;
             z-index: 99;
             position: relative;
             height: 50px;
@@ -597,14 +584,14 @@
                 position: relative;
                 margin: 10px 30px;
                 right: 50px;
-                font-size: 12px !important;
+                font-size: 10px !important;
             }
         }
     
     
         &_buttons {
             display: flex;
-            width: 80%;
+            width: auto;
             height: 100px;
             position: relative;
             right: 20px;
@@ -613,7 +600,7 @@
             .play {
                 border-radius: 5px;
                 height: 40px;
-                width: 120px;
+                width: 100px;
                 padding: 10px 15px;
                 border: none;
                 outline: none;
@@ -623,11 +610,11 @@
             }
     
             .fa-play {
-              margin-right: 10px;
+              margin-right: 5px;
             }
     
             .fa-plus {
-            margin-right: 10px;
+            margin-right: 5px;
             }
     
             .addList {
@@ -635,7 +622,7 @@
                 margin-left: 10px;
                 border-radius: 5px;
                 height: 40px;
-                width: 120px;
+                width: 110px;
                 padding: 10px 15px;
                 border: none;
                 outline: none;

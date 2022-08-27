@@ -5,7 +5,6 @@
         display: flex;
         justify-content: space-between;
         z-index: 99;
-        // position: fixed;
 
         &_logo {
             img {
@@ -39,6 +38,7 @@
            align-items: center;
            height: 60px;
            position: relative;
+           padding: 0px 20px;
 
             p {
                 margin: 0px 10px;
@@ -64,13 +64,15 @@
             }
         }
 
-
-
+      &_togglerSwitch {
+        display: none;
+      }
+   
         @media screen and (max-width: 768px) {
             &_logo {
                 img {
                     width: 80px;
-                    margin: 10px 35px;
+                    margin: 20px 35px;
                 }
             }
     
@@ -114,7 +116,8 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                width: 60%;
+                width: auto;
+                display: none;
             }
     
             &_pt2 {
@@ -123,7 +126,15 @@
                     font-size: 20px;
                     padding-left: 50px;
                     padding-right: 50px;
+                    display: none;
                 }
+            }
+
+            &_togglerSwitch {
+                padding: 0px 5px;
+                display: flex;
+                background-color: rgba(255, 0, 0, 0);
+                color: white !important;
             }
     
         }
@@ -174,7 +185,9 @@
             &_pt1 {
                 display: flex;
                 flex-direction: row;
-                width: 100% !important;
+                justify-content: space-between;
+                width: auto;
+                display: none;
             }
     
             &_pt2 {
@@ -183,7 +196,10 @@
                     font-size: 20px;
                     padding-left: 50px;
                     padding-right: 50px;
+                    display: none;
                 }
+
+                
             }    
         }
 
@@ -198,7 +214,7 @@
             &_logo {
                 img {
                     width: 60px;
-                    margin: 20px 25px;
+                    margin: 26px 25px;
                 }
             }
     
@@ -239,16 +255,20 @@
             &_pt1 {
                 display: flex;
                 flex-direction: row;
-                width: auto!important;
+                justify-content: space-between;
+                width: auto;
+                display: none;
             }
     
             &_pt2 {
                 display: flex;
                 width: 20%;
+
                 .fa-magnifying-glass {
                     font-size: 20px;
                     padding-left: 20px;
                     padding-right: 10px !important;
+                    display: none;
                 }
             }    
         }

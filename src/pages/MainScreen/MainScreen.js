@@ -5,8 +5,8 @@ import Navbar from "../../components/Navbar/Navbar";
 export const MainScreen = () => {
   return (
     <div>
-      <Navbar mainHome={"true"} />
-       <HomeSlide/>   
+      <Navbar mainHome={"true"}/>
+      <HomeSlide/>   
     </div>
   )
 }
