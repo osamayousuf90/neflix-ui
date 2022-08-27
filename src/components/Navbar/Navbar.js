@@ -18,15 +18,16 @@ const Navbar = ({ pswCreater, signUpPageView, mainHome }) => {
           {mainHome === "true" ? <p style={mainHome === "true" ? { color: "white" } : ""}>My List</p> : ""}
           </div>
           {mainHome === "true" ? <div className="navbar_pt2">
-          <p style={mainHome === "true" ? { color: "white" } : ""}><i class="fa-solid fa-magnifying-glass"></i></p>
+          <p style={mainHome === "true" ? { color: "white"} : ""}><i class="fa-solid fa-magnifying-glass"></i></p>
           </div> : ""}  
-        </div> : "" }
-        <div className="navbar_links">
+        </div> : ""}
+        
+        {pswCreater === "true" ? <div className="navbar_links">
           {/* password creater 1st step */}
          { pswCreater === "true" ? <Link to="/signin"><p className='blackSignIn'>Sign In</p></Link> : "" }
          {signUpPageView === "true" ? "" :"" }
          {signUpPageView === "true" ? <Link to="/signin"><p className="signinbtn">Sign In</p></Link>  : "" } 
-        </div>  
+        </div> : ""} 
       </div>
       { mainHome === "true" ? "" : <hr/> }
      </div>
