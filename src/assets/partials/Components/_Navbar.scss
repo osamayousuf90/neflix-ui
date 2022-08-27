@@ -70,9 +70,10 @@
 
             img {
                 border-radius: 30px;
-                width: 60px;
-                height: 50px;
+                width: 40px;
+                height: 35px;
                 cursor: pointer;
+                margin: 0px 20px;
             }
         }
 
@@ -108,7 +109,7 @@
     
     
             &_mainHome {
-                width: 70%;
+                width: auto;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -140,10 +141,13 @@
     
     
                 img {
+                    position: absolute;
+                    right: -100px;
                     border-radius: 30px;
-                    width: 60px;
-                    height: 50px;
+                    width: 40px;
+                    height: 35px;
                     cursor: pointer;
+                    margin: 0px 20px;
                 }
                 
                 .fa-magnifying-glass {
@@ -197,6 +201,7 @@
                align-items: center;
                height: 60px;
                position: relative;
+               width: auto;
     
                 p {
                     font-weight: 600;
@@ -220,12 +225,14 @@
                 align-items: center;
                 flex-direction: row;
     
-    
                 img {
+                    position: absolute;
+                    right: -70px;
                     border-radius: 30px;
-                    width: 60px;
-                    height: 50px;
+                    width: 40px;
+                    height: 35px;
                     cursor: pointer;
+                    margin: 0px 20px;
                 }
                 
                 .fa-magnifying-glass {
@@ -249,7 +256,7 @@
         @media screen and (max-width: 375px) {
             &_logo {
                 img {
-                    width: 60px;
+                    width: 80px;
                     margin: 26px 25px;
                 }
             }
@@ -278,7 +285,7 @@
                 align-items: center;
                 height: 60px;
                 position: relative;
-                width: 40%;
+                width: auto;
     
                 p {
                     font-weight: 600;
@@ -302,12 +309,41 @@
                 align-items: center;
                 flex-direction: row;
     
+                img {
+                    margin: 0px 20px;
+                    position: absolute;
+                    right: -50px;
+                    border-radius: 30px;
+                    width: 40px;
+                    height: 35px;
+                    cursor: pointer;
+                }
+
+                .fa-magnifying-glass {
+                    font-size: 20px;
+                    padding-left: 20px;
+                    padding-right: 10px !important;
+                    display: none;
+                }
+            }    
+        }
+
+
+        @media screen and (max-width : 320px) {
+            &_pt2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
     
                 img {
+                    position: absolute;
+                    right: -40px;
                     border-radius: 30px;
-                    width: 60px;
-                    height: 50px;
+                    width: 40px;
+                    height: 35px;
                     cursor: pointer;
+                    margin: 0px 20px;
                 }
 
                 .fa-magnifying-glass {
