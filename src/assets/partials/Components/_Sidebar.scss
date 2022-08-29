@@ -1,7 +1,7 @@
 .sidebarActive {
     transition: 0.4s ease;
     min-height: 100vh;
-    width: 100%;
+    width: 100% !important;
     position: fixed;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -20,10 +20,10 @@
     }
 
     &_searchBar{
-        display: flex; 
-        // background-color: red;
+        display: flex;
         position: relative;
         top: 50px;
+        justify-content: center;
 
         input {
             padding: 20px;
@@ -33,105 +33,306 @@
     }
 
 
-    @media screen and (max-width : 768px) {
-       
-        .sidebarActive {
-            transition: 0.4s ease;
-            min-height: 100vh;
-            width: 50%;
-            position: fixed;
-            background-color: rgb(0, 0, 0);
-            color: white;
-            z-index: 999;
-            right: 0;
-            top: 0px;
+    &_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 120px;
 
-        &_searchBar{
-            display: flex; 
-            justify-content: center;
-            position: relative;
-            top: 50px;
-    
-            input {
-                padding: 20px;
-                height: 20px;
-                border: none;
-                outline: none;
-                border-radius: 5px;
-                background-color: rgba(128, 128, 128, 0.507);
-                color: white;
-                font-weight: 600;
-    
-            }
+        p {
+            font-weight: 600;
+            padding: 5px;
+        }
+    }
+
+    &_logOut {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: auto;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50px;
         }
 
-        &_links {
+        button {
+          background-color: #E9292C;
+          border: none;
+          outline: none;
+          height: 40px;
+          width: 200px;
+          color: white !important;
+          font-weight: 600;
+          border-radius: 5px;
+        }
+
+        h6 {
+            margin-top: 10px;
+            font-size: 12px !important;
+        }
+    }
+
+}
+
+@media screen and (max-width : 1000px) {
+       
+    .sidebarActive {
+        transition: 0.4s ease;
+        min-height: 100vh;
+        width: 60% !important;
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        z-index: 999;
+        right: 0;
+        top: 0px;
+
+        &_inner {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative;
-            top: 120px;
-
-            p {
-                font-weight: 600;
-                padding: 5px;
-            }
         }
 
-    }
-    
-    }
+    &_searchBar{
+        display: flex; 
+        justify-content: center;
+        position: relative;
+        top: 50px;
 
-
-    @media screen and (max-width : 425px) {
-       
-        .sidebarActive {
-            transition: 0.4s ease;
-            min-height: 100vh;
-            width: 60% !important;
-            position: fixed;
-            background-color: rgb(0, 0, 0);
+        input {
+            padding: 20px;
+            height: 20px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgba(128, 128, 128, 0.507);
             color: white;
-            z-index: 999;
-            right: 0;
-            top: 0px;
+            font-weight: 600;
 
-        &_searchBar{
-            display: flex; 
-            justify-content: center;
-            position: relative;
-            top: 50px;
-    
-            input {
-                padding: 20px;
-                height: 20px;
-                border: none;
-                outline: none;
-                border-radius: 5px;
-                background-color: rgba(128, 128, 128, 0.507);
-                color: white;
-                font-weight: 600;
-    
-            }
+        }
+    }
+
+    &_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 120px;
+
+        p {
+            font-weight: 600;
+            padding: 5px;
+        }
+    }
+
+    &_logOut {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: auto;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50px;
         }
 
-        &_links {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            top: 120px;
-
-            p {
-                font-weight: 600;
-                padding: 5px;
-            }
+        button {
+          background-color: #E9292C;
+          border: none;
+          outline: none;
+          height: 40px;
+          width: 200px;
+          color: white !important;
+          font-weight: 600;
+          border-radius: 5px;
         }
 
+        h6 {
+            margin-top: 10px;
+            font-size: 12px !important;
+        }
     }
-    
+
+}
+
+}
+
+
+@media screen and (max-width : 425px) {
+       
+    .sidebarActive {
+        transition: 0.4s ease;
+        min-height: 100vh;
+        width: 80% !important;
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        z-index: 999;
+        right: 0;
+        top: 0px;
+
+    &_searchBar{
+        display: flex; 
+        justify-content: center;
+        position: relative;
+        top: 50px;
+
+        input {
+            padding: 20px;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgba(128, 128, 128, 0.507);
+            color: white;
+            font-weight: 600;
+
+        }
     }
+
+    &_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 120px;
+
+        p {
+            font-weight: 600;
+            padding: 5px;
+        }
+    }
+
+    &_logOut {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: auto;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50px;
+        }
+
+        button {
+          background-color: #E9292C;
+          border: none;
+          outline: none;
+          height: 40px;
+          width: 100px;
+          color: white !important;
+          font-weight: 600;
+          border-radius: 5px;
+        }
+
+        h6 {
+            margin-top: 10px;
+            font-size: 10px !important;
+        }
+    }
+
+}
+
+}
+
+
+@media screen and (max-width : 378px) {
+       
+    .sidebarActive {
+        transition: 0.4s ease;
+        min-height: 100vh;
+        width: auto !important;
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        z-index: 999;
+        right: 0;
+        top: 0px;
+
+    &_searchBar{
+        display: flex; 
+        justify-content: center;
+        position: relative;
+        top: 80px;
+
+        input {
+            padding: 15px auto;
+            height: 20px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgba(128, 128, 128, 0.507);
+            color: white;
+            font-weight: 600;
+
+        }
+    }
+
+    &_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 120px;
+
+        p {
+            font-weight: 600;
+            padding: 5px;
+        }
+    }
+
+
+    &_logOut {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: auto;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50px;
+        }
+
+        button {
+          background-color: #E9292C;
+          border: none;
+          outline: none;
+          height: 40px;
+          width: 100px;
+          color: white !important;
+          font-weight: 600;
+          border-radius: 5px;
+        }
+
+        h6 {
+            margin-top: 10px;
+            font-size: 10px !important;
+        }
+    }
+
+}
 
 }

@@ -25,10 +25,6 @@
                 font-weight: 500;
             }
 
-            .signinbtn {
-                background-color: #E50914 !important;
-                border-radius: 5px;
-            }
         }
 
         &_mainHome {
@@ -61,6 +57,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
+            position: relative;
             
             .fa-magnifying-glass {
                 font-size: 20px;
@@ -68,20 +65,121 @@
                 padding-right: 50px;
             }
 
+            input {
+              border-radius: 5px;
+              position: relative;
+              padding: 5px 60px;
+              border: none;
+              outline: none;
+              height: 35px;
+              font-weight: 500;
+              background-color: rgba(184, 180, 180, 0.349);
+              color: white;
+            }
+
+            input:focus {
+             background-color: rgba(223, 223, 223, 0.411);
+             color: white;
+            }
+
             img {
-                border-radius: 30px;
+                border-radius: 5px;
                 width: 40px;
                 height: 35px;
                 cursor: pointer;
                 margin: 0px 20px;
+            }
+
+            .fa-caret-down {
+                color: white;
+                font-size: 15px;
+                position: relative;
+                right: 10px;
+                margin: 0px 2px;
+            }
+        }
+
+        &_searchbarDiv {
+            position: relative;
+            right: 50px;
+            margin: 0px 20px;
+
+            .fa-magnifying-glass {
+                position: absolute;
+                left: -25px;
+                top: 10px;
+                font-size: 15px;
+                color: white;
             }
         }
 
       &_togglerSwitch {
         display: none;
       }
+      
+      &_logOut {
+       padding: 0px 20px;
+       background-color: rgba(27, 27, 27, 0.911);
+       width: 90%;
+       padding: 0px 50px;
+       height: 180px;
+       position: absolute;
+       z-index: 999;
+       top: 45px;
+       right: 20px;
+       border-top-left-radius: 20px;
+       right: 20px;
+       border-bottom-right-radius: 20px;
+       border-bottom-left-radius: 20px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+
+       p {
+        position: relative;
+        top: 10px;
+        padding: 0px 0px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+       }
+
+       hr {
+        width: 150px;
+        border: 0.5px solid rgba(255, 255, 255, 0.486);
+       }
+
+       button {
+        background-color: #E9292C;
+        color: white;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        height: 40px;
+        width: 100px;
+        margin-top: 10px;
+       }
+
+        h6 {
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+            margin: 15px 0px;
+        }
+
+      }
+
+      .signinbtn {
+        background-color: #E50914 !important;
+        border-radius: 5px;
+        padding: 5px 20px;
+        color: white;
+        font-weight: bold;
+    }
    
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
             &_logo {
                 img {
                     width: 80px;
@@ -138,9 +236,10 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: row;
-    
-    
+                position: relative;
+
                 img {
+                    display: none;
                     position: absolute;
                     right: -100px;
                     border-radius: 30px;
@@ -149,6 +248,15 @@
                     cursor: pointer;
                     margin: 0px 20px;
                 }
+
+                .fa-caret-down {
+                    color: white;
+                    font-size: 15px;
+                    position: relative;
+                    right: 10px;
+                    margin: 0px 2px;
+                    display: none;
+                }
                 
                 .fa-magnifying-glass {
                     font-size: 20px;
@@ -156,6 +264,25 @@
                     padding-right: 50px;
                     display: none;
                 }
+            }
+
+
+            &_logOut {
+            background-color: rgba(27, 27, 27, 0.911);
+            width: 90%;
+            padding: 0px 90px;
+            height: 180px;
+            position: absolute;
+            z-index: 999;
+            top: 45px;
+            border-top-left-radius: 20px;
+            right: -86px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             }
 
             &_togglerSwitch {
