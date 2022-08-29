@@ -1,3 +1,15 @@
+.navbarBlackBg {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0) !important;
+    justify-content: space-around;
+    } 
+    
     .navbar {
         height: 80px;
         width: 100%;
@@ -118,9 +130,9 @@
       }
       
       &_logOut {
-       padding: 0px 20px;
+       padding: 0px 5px;
        background-color: rgba(27, 27, 27, 0.911);
-       width: 90%;
+       width: 100%;
        padding: 0px 50px;
        height: 180px;
        position: absolute;
@@ -165,8 +177,8 @@
         h6 {
             color: white;
             font-weight: 600;
-            font-size: 12px;
-            margin: 15px 0px;
+            font-size: 15px !important;
+            margin-top: 10px !important;
         }
 
       }
@@ -283,6 +295,41 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+
+
+            p {
+                position: relative;
+                top: 10px;
+                padding: 0px 0px;
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+               }
+        
+               hr {
+                width: 150px;
+                border: 0.5px solid rgba(255, 255, 255, 0.486);
+               }
+        
+               button {
+                background-color: #E9292C;
+                color: white;
+                font-weight: 600;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                height: 40px;
+                width: 100px;
+                margin-top: 10px;
+               }
+        
+                h6 {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 10px !important;
+                    margin-top: 20px !important;
+                }
             }
 
             &_togglerSwitch {

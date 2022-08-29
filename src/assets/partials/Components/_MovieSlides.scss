@@ -1,0 +1,45 @@
+.movieSlides {
+    width: 100%;
+    display: flex;
+    margin: 0px 20px;
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+        opacity: .100;
+        cursor: auto;
+        pointer-events: none;
+        display: none;
+    }
+
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        content: 'next';
+        color: white;
+    }
+
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+        color: white;
+    }
+
+    .mySwiper {
+        width: 100%;
+    }
+    
+    &_card {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+        width: 800px;
+        // object-position: 100%;
+        height: 200px;
+        }
+    }
+
+}
