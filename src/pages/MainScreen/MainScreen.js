@@ -10,7 +10,9 @@ export const MainScreen = () => {
       <Navbar mainHome={"true"}/>
       <HomeSlide />
       <h6 className='mainScreen_heading'>Trending Now</h6>
-      <MovieSlides trendingNow={"true"}/>
+      <MovieSlides trendingNow={"true"} />
+      <h6 className='mainScreen_heading'>Popular Now</h6>
+      <MovieSlides popularNow={"true"}/>
     </div>
   )
 }
