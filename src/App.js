@@ -15,8 +15,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Outside */}
+          <Route path="/" exact element={<SignIn/>}></Route>
+
         <Route path='/signup' element={<SignUp/>}></Route>
-        <Route path="/signin" element={<SignIn/>}></Route>
         <Route path='/passwordCreator' element={<OnePassCreator/>}></Route>
         <Route path="/passwordCreater/choosePlan" element={<TwoChoosePlan/>}></Route>
         <Route path="/passwordCreater/choosePlan/selectSubscription" element={<ThreePackageChooser />}></Route>
