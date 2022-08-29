@@ -33,12 +33,13 @@
     }
     
     &_card {
-        display: flex;
         width: 100%;
+        display: flex;
 
         img {
-        width: auto;
+        width: 300px !important;
         height: 150px;
+        padding: 0px 20px;
         }
     }
 
