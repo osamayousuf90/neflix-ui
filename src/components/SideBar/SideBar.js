@@ -21,12 +21,6 @@ const SideBar = ({ setClose }) => {
       <div ref={sidebarRef} onClick={(e) => clickOutSidebar(e)} className={"sidebarActive"}>
         <div className="sidebarActive_inner">
           <i onClick={() => setClose(false)} class="fa-solid fa-xmark"></i>
-          <div className="sidebarActive_logOut">
-            <img src={profile} alt="" />
-            <p>Osama</p>
-            <button>Log Out</button>
-            <h6>Expiration Time : 28 Days</h6>
-          </div>
           <div className="sidebarActive_searchBar">
           <input type="text" placeholder='Search...' />
           </div>

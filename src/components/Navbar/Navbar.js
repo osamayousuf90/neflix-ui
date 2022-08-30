@@ -51,12 +51,35 @@ const Navbar = ({ pswCreater, signUpPageView, mainHome }) => {
           </div>
           {mainHome === "true" ?
           <div className="navbar_pt2">
-          { inputOpen === true ? <div className='navbar_searchbarDiv'><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder='Search...' ref={inputRef} onClick={(e) => clickOutSideInput(e)} /></div>  : <p style={mainHome === "true" ? { color: "white" } : ""}><i onClick={() => setInputOpen(!inputOpen) } class="fa-solid fa-magnifying-glass"></i></p>} 
-          {mainHome === "true" && <><div style={{position: "relative"}}><img src={profile} ref={logOutRef} onClick={() => setLogOutOpen(!logOutOpen)}/> <i class="fa-solid fa-caret-down"></i></div></>}
-          {mainHome === "true" ? logOutOpen && <div ref={logOutInnerRef} onClick={(e) => clickOutSideLogOut(e)} className='navbar_logOut'><p>Osama</p> <hr /> <button>Log Out</button> <h6>Expiration Time : 28 Days</h6> </div> : ""}       
+          {inputOpen === true ? <div className='navbar_searchbarDiv'><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder='Search...' ref={inputRef} onClick={(e) => clickOutSideInput(e)} /></div>  : <i onClick={() => setInputOpen(!inputOpen) } class="fa-solid fa-magnifying-glass"></i>} 
+          {mainHome === "true" ? logOutOpen &&
+          <div ref={logOutInnerRef} onClick={(e) => clickOutSideLogOut(e)} className='navbar_logOut'>
+          <div className="navbar_logOutOptions">
+          <img src={profile} /><p>Osama</p> 
+                    </div>  
+                    <div className="navbar_logOutOptions">
+          <img src={profile} /><p>Osama</p> 
+          </div>  
+          <div className="navbar_logOutOptions">
+          <img src={profile} /><p>Osama</p> 
+          </div>  
+          <div className="navbar_logOutOptions">
+          <img src={profile} /><p>Osama</p> 
+          </div> 
+          <div className="navbar_logOutOptions">
+          <img src={profile} /><p>Osama</p> 
+          </div>            
+          <div className="navbar_btnDiv">
+          <button>Sign Out Of Netflix</button>       
+          </div>          
           </div> : ""} 
+                
+          </div> : ""} 
+            
           <div className="navbar_togglerSwitch">
+          {mainHome === "true" && <><div style={{position: "relative"}}><img src={profile} ref={logOutRef} onClick={() => setLogOutOpen(!logOutOpen)}/> <i class="fa-solid fa-caret-down"></i></div> </>}
           {mainHome === "true" ? <i onClick={() => setClose(true)} class="fa-solid fa-bars"></i> : ""}
+              
           </div>
           </div> : ""}
         

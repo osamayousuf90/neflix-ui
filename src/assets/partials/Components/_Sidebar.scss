@@ -27,7 +27,13 @@
 
         input {
             padding: 20px;
-            height: 40px;
+            height: 20px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgba(128, 128, 128, 0.507);
+            color: white;
+            font-weight: 600;
 
         }
     }
@@ -44,38 +50,6 @@
         p {
             font-weight: 600;
             padding: 5px;
-        }
-    }
-
-    &_logOut {
-        position: relative;
-        top: 20px;
-        left: 0px;
-        width: auto;
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 50px;
-        }
-
-        button {
-          background-color: #E9292C;
-          border: none;
-          outline: none;
-          height: 40px;
-          width: 200px;
-          color: white !important;
-          font-weight: 600;
-          border-radius: 5px;
-        }
-
-        h6 {
-            margin-top: 10px;
-            font-size: 12px !important;
         }
     }
 
@@ -105,7 +79,7 @@
         display: flex; 
         justify-content: center;
         position: relative;
-        top: 50px;
+        top: 20px;
 
         input {
             padding: 20px;
@@ -133,39 +107,6 @@
             padding: 5px;
         }
     }
-
-    &_logOut {
-        position: relative;
-        top: 20px;
-        left: 0px;
-        width: auto;
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 50px;
-        }
-
-        button {
-          background-color: #E9292C;
-          border: none;
-          outline: none;
-          height: 40px;
-          width: 200px;
-          color: white !important;
-          font-weight: 600;
-          border-radius: 5px;
-        }
-
-        h6 {
-            margin-top: 10px;
-            font-size: 12px !important;
-        }
-    }
-
 }
 
 }
@@ -188,7 +129,8 @@
         display: flex; 
         justify-content: center;
         position: relative;
-        top: 50px;
+        top: 20px;
+        margin: 0px 20px;
 
         input {
             padding: 20px;
@@ -216,39 +158,6 @@
             padding: 5px;
         }
     }
-
-    &_logOut {
-        position: relative;
-        top: 20px;
-        left: 0px;
-        width: auto;
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 50px;
-        }
-
-        button {
-          background-color: #E9292C;
-          border: none;
-          outline: none;
-          height: 40px;
-          width: 100px;
-          color: white !important;
-          font-weight: 600;
-          border-radius: 5px;
-        }
-
-        h6 {
-            margin-top: 10px;
-            font-size: 10px !important;
-        }
-    }
-
 }
 
 }
@@ -259,7 +168,7 @@
     .sidebarActive {
         transition: 0.4s ease;
         min-height: 100vh;
-        width: auto !important;
+        width: 80% !important;
         position: fixed;
         background-color: rgb(0, 0, 0);
         color: white;
@@ -271,11 +180,13 @@
         display: flex; 
         justify-content: center;
         position: relative;
-        top: 80px;
+        top: 22px;
+        right: 15px;
 
         input {
-            padding: 15px auto;
-            height: 20px;
+            padding: 15px 20px;
+            height: 40px;
+            width: 100% !important;
             border: none;
             outline: none;
             border-radius: 5px;
@@ -292,47 +203,13 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 120px;
+        top: 80px;
 
         p {
             font-weight: 600;
             padding: 5px;
         }
     }
-
-
-    &_logOut {
-        position: relative;
-        top: 20px;
-        left: 0px;
-        width: auto;
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 50px;
-        }
-
-        button {
-          background-color: #E9292C;
-          border: none;
-          outline: none;
-          height: 40px;
-          width: 100px;
-          color: white !important;
-          font-weight: 600;
-          border-radius: 5px;
-        }
-
-        h6 {
-            margin-top: 10px;
-            font-size: 10px !important;
-        }
-    }
-
 }
 
 }

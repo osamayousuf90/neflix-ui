@@ -7,7 +7,7 @@
     display: flex;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0) !important;
-    justify-content: space-around;
+    justify-content: space-evenly;
     } 
     
     .navbar {
@@ -70,11 +70,15 @@
             align-items: center;
             flex-direction: row;
             position: relative;
+            position: relative;
+            left: 320px;
             
             .fa-magnifying-glass {
                 font-size: 20px;
                 padding-left: 50px;
                 padding-right: 50px;
+                color: white;
+                cursor: pointer;
             }
 
             input {
@@ -93,22 +97,6 @@
              background-color: rgba(223, 223, 223, 0.411);
              color: white;
             }
-
-            img {
-                border-radius: 5px;
-                width: 40px;
-                height: 35px;
-                cursor: pointer;
-                margin: 0px 20px;
-            }
-
-            .fa-caret-down {
-                color: white;
-                font-size: 15px;
-                position: relative;
-                right: 10px;
-                margin: 0px 2px;
-            }
         }
 
         &_searchbarDiv {
@@ -126,52 +114,72 @@
         }
 
       &_togglerSwitch {
-        display: none;
+        margin: 0px 80px;
+        padding: 0px 5px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 0, 0, 0);
+        color: white !important;
+        position: relative;
+        align-items: center;
+        width: auto;
+       
+        img {
+            width: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .fa-caret-down {
+            color: white;
+            font-size: 15px;
+            position: relative;
+            margin-left: 5px;
+        }
+
+        .fa-bars {
+            display: none;
+        }
       }
+
       
       &_logOut {
-       padding: 0px 5px;
-       background-color: rgba(27, 27, 27, 0.911);
-       width: 100%;
-       padding: 0px 50px;
-       height: 180px;
-       position: absolute;
-       z-index: 999;
-       top: 45px;
-       right: 20px;
-       border-top-left-radius: 20px;
-       right: 20px;
-       border-bottom-right-radius: 20px;
-       border-bottom-left-radius: 20px;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
+        background-color: rgba(5, 5, 5, 0.822);
+        width: 170%;
+        height: auto;
+        position: absolute;
+        z-index: 999;
+        top: 45px;
+        right: -154px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.226);
+        overflow-y: scroll;
 
        p {
         position: relative;
-        top: 10px;
         padding: 0px 0px;
         color: white;
         font-size: 16px;
         font-weight: 600;
        }
 
-       hr {
-        width: 150px;
-        border: 0.5px solid rgba(255, 255, 255, 0.486);
+       img {
+        display: flex;
+        width: 50px;
        }
 
        button {
-        background-color: #E9292C;
+        background-color: rgba(27, 27, 27, 0.514);
         color: white;
         font-weight: 600;
-        border: none;
+        border: 1px solid rgba(255, 255, 255, 0.226);
         outline: none;
-        border-radius: 5px;
         height: 40px;
-        width: 100px;
-        margin-top: 10px;
+        width: 100%;
+        font-size: 12px !important;
+        font-weight: 750;
        }
 
         h6 {
@@ -181,6 +189,53 @@
             margin-top: 10px !important;
         }
 
+      }
+
+      &_btnDiv {
+        position: relative;
+        display: flex;
+        // top: 128px;
+        width: 100%;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+      }
+
+      &_logOut::-webkit-scrollbar {
+        width: 2px !important;
+      }
+
+      &_logOut::-webkit-scrollbar-thumb {
+        background: lightgrey; 
+        border-radius: 5px;
+      }
+
+      &_logOutOptions {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+        cursor: pointer;
+
+        img {
+            height: 30px;
+            width: 30px;
+            margin: 5px 0px;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+      }
+
+      &_logOutOptions:hover {
+       background-color: rgba(187, 181, 181, 0.692);
       }
 
       .signinbtn {
@@ -217,9 +272,7 @@
                 }
             }
     
-    
             &_mainHome {
-                width: auto;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -249,35 +302,34 @@
                 align-items: center;
                 flex-direction: row;
                 position: relative;
-
-                img {
-                    display: none;
-                    position: absolute;
-                    right: -100px;
-                    border-radius: 30px;
-                    width: 40px;
-                    height: 35px;
-                    cursor: pointer;
-                    margin: 0px 20px;
-                }
-
-                .fa-caret-down {
-                    color: white;
-                    font-size: 15px;
-                    position: relative;
-                    right: 10px;
-                    margin: 0px 2px;
-                    display: none;
-                }
+                position: relative;
+                left: 100px;
                 
                 .fa-magnifying-glass {
                     font-size: 20px;
                     padding-left: 50px;
                     padding-right: 50px;
-                    display: none;
+                    color: white;
+                }
+    
+                input {
+                  border-radius: 5px;
+                  position: relative;
+                  padding: 5px 60px;
+                  border: none;
+                  outline: none;
+                  height: 35px;
+                  font-weight: 500;
+                  background-color: rgba(184, 180, 180, 0.349);
+                  color: white;
+                }
+    
+                input:focus {
+                 background-color: rgba(223, 223, 223, 0.411);
+                 color: white;
                 }
             }
-
+    
 
             &_logOut {
             background-color: rgba(27, 27, 27, 0.911);
@@ -291,12 +343,10 @@
             right: -86px;
             border-bottom-right-radius: 20px;
             border-bottom-left-radius: 20px;
-            display: none;
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
-
 
             p {
                 position: relative;
@@ -333,11 +383,32 @@
             }
 
             &_togglerSwitch {
+                margin: 0px 80px;
                 padding: 0px 5px;
                 display: flex;
+                justify-content: space-between;
                 background-color: rgba(255, 0, 0, 0);
                 color: white !important;
-            }
+                position: relative;
+                align-items: center;
+                width: auto;
+               
+                img {
+                    width: 50px;
+                    border-radius: 5px;
+                }
+        
+                .fa-caret-down {
+                    color: white;
+                    font-size: 15px;
+                    position: relative;
+                    margin-right: 50px;
+                }
+        
+                .fa-bars {
+                    display: block;
+                }
+              }
     
         }
 
@@ -401,8 +472,9 @@
     
                 img {
                     position: absolute;
-                    right: -70px;
-                    border-radius: 30px;
+                    right: -220px;
+                    top: -18px;
+                    border-radius: 5px;
                     width: 40px;
                     height: 35px;
                     cursor: pointer;
